@@ -4,10 +4,10 @@ const express = require("express");
 const app = express();
 const port = process.env.PORT || 4000;
 
-app.get("/", (req, res) => {
-    res.send("Hello World asdasdsd!");
+app.get("/", function(req, res) {
+    res.send("Hello World xxxxxxxx!");
 });
 
-app.listen(port, () => {
-    console.log(chalk.green(`App listening on port ${port}`)); // eslint-disable-line no-console
+app.listen(port, function() {
+    console.log(chalk.green("App listening on port " + port)); // eslint-disable-line no-console
 });
