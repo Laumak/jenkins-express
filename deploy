@@ -1,6 +1,7 @@
 -#!/bin/sh
     cd /var/www/html/
     git pull
+    cd ./jenkins-express
     npm install --production
     pm2 restart all
     exit
